@@ -1,0 +1,14 @@
+1. Download .zip file to /usr/distfiles/
+```
+$ ls /usr/distfiles/
+ sonar-3.6.3.zip
+```
+2. Build
+```
+$ cd <arch>
+$ ./build 3.6.3 
+```
+3. Install
+```
+$ dpkg --install sonar-3.6.3.deb
+```
