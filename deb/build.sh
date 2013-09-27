@@ -14,7 +14,7 @@ fi
 VER=$1
 
 # prepare fresh directories
-rm -rv tmp/
+rm -rfv tmp/
 mkdir -p tmp/DEBIAN/
 
 # changelog
@@ -68,4 +68,4 @@ chmod 755 tmp/DEBIAN/postrm
 
 dpkg-gencontrol -Ptmp
 
-fakeroot dpkg-deb -b tmp sonar.deb
+fakeroot dpkg-deb -b tmp sonar-${VER}.deb
